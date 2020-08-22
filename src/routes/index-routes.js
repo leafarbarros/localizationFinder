@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.get('/', (req, res, next) => {
   res.status(200).send({
-    title: 'LocalizationFinderAPI TESTE',
+    title: 'LocalizationFinderAPI',
     version: '1.0.0'
   });
 });

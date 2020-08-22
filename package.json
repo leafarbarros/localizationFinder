@@ -2,11 +2,12 @@
   "name": "localizationFinder",
   "version": "1.0.0",
   "description": "Its an API to find the closests localization",
-  "main": "index.js",
+  "main": "app.js",
   "engines": {
     "node": "12.x"
   },
   "scripts": {
+    "start": "node node_modules/nodemon/bin/nodemon bin/server",
     "dev": "node node_modules/nodemon/bin/nodemon bin/server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Its an API to find the closests localization",
   "main": "index.js",
+  "engines": {
+    "node": "12.18.3"
+  },
   "scripts": {
     "dev": "node node_modules/nodemon/bin/nodemon bin/server",
     "test": "echo \"Error: no test specified\" && exit 1"

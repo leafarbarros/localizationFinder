@@ -1,0 +1,28 @@
+{
+  "name": "localizationFinder",
+  "version": "1.0.0",
+  "description": "Its an API to find the closests localization",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node node_modules/nodemon/bin/nodemon bin/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leafarbarros/localizationFinder.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/leafarbarros/localizationFinder/issues"
+  },
+  "homepage": "https://github.com/leafarbarros/localizationFinder#readme",
+  "dependencies": {
+    "debug": "^4.1.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

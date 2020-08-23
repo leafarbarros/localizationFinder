@@ -59,5 +59,4 @@ app.use('/auth', authRoutes);
 const locationRoutes = require('./routes/locations-routes');
 app.use('/locations', locationRoutes);
 
-
 module.exports = app;

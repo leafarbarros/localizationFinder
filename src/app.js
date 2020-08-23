@@ -44,6 +44,7 @@ process.on('SIGINT', () => {
 
 // Models
 const Users = require('./models/users');
+const Location = require('./models/locations');
 
 // Load routes
 const indexRoutes = require('./routes/index-routes');
@@ -54,5 +55,9 @@ app.use('/users', usersRoutes);
 
 const authRoutes = require('./routes/authentication-routes');
 app.use('/auth', authRoutes);
+
+const locationRoutes = require('./routes/locations-routes');
+app.use('/locations', locationRoutes);
+
 
 module.exports = app;

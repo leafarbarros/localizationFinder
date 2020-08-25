@@ -8,8 +8,8 @@
   },
   "scripts": {
     "start": "node bin/server",
-    "dev": "node node_modules/nodemon/bin/nodemon bin/server",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --watchAll",
+    "dev": "node node_modules/nodemon/bin/nodemon bin/server"
   },
   "repository": {
     "type": "git",
@@ -35,6 +35,8 @@
     "swagger-ui-express": "^4.1.4"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "jest": "^26.4.2",
+    "nodemon": "^2.0.4",
+    "supertest": "^4.0.2"
   }
 }

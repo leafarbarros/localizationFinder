@@ -29,7 +29,7 @@ exports.logout = async (req, res) => {
   decodedToken = jwt.decode(token);  
   timeToExpire = decodedToken.exp - (new Date().getTime()/1000);
     
-  res.json({ auth: false, token: ("seu token expira em " + timeToExpire.toFixed(0) + "s") });
+  res.json({ auth: true, token: ("você ainda pode utilizar seu token por até " + timeToExpire.toFixed(0) + " segundos") });
 
 };
 

@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 require("dotenv-safe").config();
 var jwt = require('jsonwebtoken');
+const swaggerUi = require('swagger-ui-express');
+const specs = require('./swagger');
 
 // App
 const app = express();
@@ -49,6 +51,7 @@ const Location = require('./models/locations');
 // Load routes
 const indexRoutes = require('./routes/index-routes');
 app.use('/', indexRoutes);
+app.use('/apiDocs', swaggerUi.serve, swaggerUi.setup(specs));
 
 const usersRoutes = require('./routes/users-routes');
 app.use('/users', usersRoutes);

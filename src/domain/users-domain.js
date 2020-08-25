@@ -7,7 +7,6 @@ exports.listUsers = async () => {
 };
 
 exports.findUser = async filterData => {
-  console.log(filterData);
   const findUser = await Users.find(filterData);
   return findUser;
 };

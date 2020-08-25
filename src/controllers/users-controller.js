@@ -7,7 +7,7 @@ exports.listUsers = async (req, res) => {
     const allUsers = await domain.listUsers();
     res.status(200).send(allUsers);
   } catch (e) {
-    res.status(500).send({message: 'Falha ao carregar os usuários.'});
+    res.status(500).send({message: 'Falha ao carregar os usuários.' + e.message});
   }
 };
 
